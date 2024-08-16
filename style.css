@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; /* Sky blue background */
+    font-family: 'Arial', sans-serif;
+}
+
+#gameContainer {
+    position: relative;
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 2px solid #000; /* Add a border to the canvas */
+    background-color: #F0F8FF; /* Light background for the canvas */
+}
+
+#pumpButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FF4500; /* Orange button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#pumpButton:active {
+    transform: scale(0.95); /* Button scale down effect on click */
+}
